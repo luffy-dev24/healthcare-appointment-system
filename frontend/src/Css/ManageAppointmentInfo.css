@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.manage-page {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.manage-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: 1px dashed #1f1f1f;
+    border-radius: 2px;
+}
+
+.manage-empty-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.manage-empty-text {
+    font-size: 13px;
+    color: #333333;
+    font-weight: 300;
+}
+
+.manage-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.manage-card:hover {
+    border-color: #2a2a2a;
+}
+
+.manage-card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.manage-card-top {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.manage-date {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.manage-status-open {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #44ff44;
+    background: #001a00;
+    border: 1px solid #003300;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.manage-status-closed {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ff4444;
+    background: #1a0000;
+    border: 1px solid #330000;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.manage-status-full {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffaa44;
+    background: #1a0a00;
+    border: 1px solid #331500;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.manage-info-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.manage-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.manage-info-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.manage-info-value {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.manage-slots-bar {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.manage-slots-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 6px;
+}
+
+.manage-bar-bg {
+    background-color: #1a1a1a;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+}
+
+.manage-bar-fill {
+    background-color: #ffffff;
+    border-radius: 2px;
+    height: 4px;
+    transition: width 0.3s ease;
+}
+
+.manage-slots-count {
+    font-size: 11px;
+    color: #555555;
+    margin-top: 4px;
+}
+
+.manage-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.manage-btn-bookings {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #aaaaaa;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.manage-btn-bookings:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.manage-btn-edit {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.manage-btn-edit:hover {
+    background-color: #e0e0e0;
+}
+
+.manage-btn-delete {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.manage-btn-delete:hover {
+    border-color: #ff4444;
+    color: #ff4444;
+}

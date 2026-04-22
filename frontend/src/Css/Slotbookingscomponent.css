@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.slot-bookings-page {
+    min-height: calc(100vh - 64px);
+    background-color: #0a0a0a;
+    padding: 40px;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.slot-bookings-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.slot-bookings-topbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.slot-bookings-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.slot-bookings-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.slot-bookings-back-btn {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.slot-bookings-back-btn:hover {
+    border-color: #444444;
+    color: #ffffff;
+}
+
+.slot-bookings-error {
+    font-size: 12px;
+    color: #ff4444;
+    background-color: #1a0000;
+    border: 1px solid #330000;
+    border-radius: 2px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+
+/* empty state */
+.slot-bookings-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: 1px dashed #1f1f1f;
+    border-radius: 2px;
+}
+
+.slot-bookings-empty-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.slot-bookings-empty-text {
+    font-size: 13px;
+    color: #333333;
+    font-weight: 300;
+}
+
+/* bookings list */
+.slot-bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* single booking card */
+.slot-booking-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.slot-booking-card:hover {
+    border-color: #2a2a2a;
+}
+
+/* avatar */
+.slot-booking-avatar-wrap {
+    flex-shrink: 0;
+}
+
+.slot-booking-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #2a2a2a;
+}
+
+.slot-booking-avatar-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* booking info */
+.slot-booking-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slot-booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slot-booking-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.slot-booking-token {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+
+.slot-booking-details {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.slot-booking-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.slot-booking-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.slot-booking-value {
+    font-size: 13px;
+    color: #aaaaaa;
+}

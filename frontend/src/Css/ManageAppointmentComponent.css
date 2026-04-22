@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.manage-wrapper {
+    min-height: calc(100vh - 64px);
+    background-color: #0a0a0a;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.manage-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: #0d0d0d;
+}
+
+.manage-topbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.manage-topbar-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.manage-topbar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.manage-topbar-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.manage-topbar-btn-primary {
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.manage-topbar-btn-primary:hover {
+    background-color: #e0e0e0;
+}
+
+.manage-topbar-btn-outline {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.manage-topbar-btn-outline:hover {
+    border-color: #444444;
+    color: #ffffff;
+}
+
+.manage-content {
+    padding: 32px 40px;
+}

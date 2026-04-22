@@ -1,0 +1,308 @@
+/* HospitalsList.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.hospitals-page {
+    min-height: calc(100vh - 64px);
+    background-color: #0a0a0a;
+    padding: 40px;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hospitals-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.hospitals-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.hospitals-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #444444;
+    border: 1px solid #222222;
+    padding: 6px 14px;
+    border-radius: 2px;
+}
+
+/* ── Search bar ── */
+.hospitals-search-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.hospitals-search-wrap {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hospitals-search-input {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    background-color: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.hospitals-search-input::placeholder {
+    color: #333333;
+}
+
+.hospitals-search-input:focus {
+    border-color: #444444;
+}
+
+.hospitals-search-clear {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #444444;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.hospitals-search-clear:hover {
+    color: #ffffff;
+}
+
+.hospitals-search-btn {
+    padding: 12px 28px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.hospitals-search-btn:hover:not(:disabled) {
+    background-color: #e0e0e0;
+}
+
+.hospitals-search-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ── Search info bar ── */
+.hospitals-search-info {
+    font-size: 12px;
+    color: #444444;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hospitals-search-info span {
+    color: #888888;
+}
+
+.hospitals-search-reset {
+    background: none;
+    border: 1px solid #222222;
+    color: #555555;
+    font-size: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.hospitals-search-reset:hover {
+    border-color: #444444;
+    color: #ffffff;
+}
+
+/* grid */
+.hospitals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+/* empty state */
+.hospitals-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: 1px dashed #1f1f1f;
+    border-radius: 2px;
+}
+
+.hospitals-empty-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.hospitals-empty-text {
+    font-size: 13px;
+    color: #333333;
+    font-weight: 300;
+}
+
+/* hospital card */
+.hospital-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.hospital-card:hover {
+    border-color: #2a2a2a;
+}
+
+.hospital-card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.hospital-card-img-placeholder {
+    width: 100%;
+    height: 160px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.hospital-card-body {
+    padding: 20px;
+}
+
+.hospital-card-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+}
+
+.hospital-card-city {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+    margin: 0 0 16px 0;
+}
+
+.hospital-card-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.hospital-card-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.hospital-card-info-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.hospital-card-info-value {
+    font-size: 12px;
+    color: #666666;
+}
+
+.hospital-card-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.hospital-card-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* pagination */
+.hospitals-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.hospitals-page-btn {
+    padding: 10px 28px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.hospitals-page-btn:hover:not(:disabled) {
+    background-color: #1a1a1a;
+    border-color: #444444;
+}
+
+.hospitals-page-btn:disabled {
+    color: #2a2a2a;
+    border-color: #1a1a1a;
+    cursor: not-allowed;
+}

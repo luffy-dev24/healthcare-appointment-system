@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600&display=swap');
+
+.doctor-profile-page {
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.doctor-profile-card {
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-top: 3px solid #ffffff;
+    border-radius: 6px;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.doctor-profile-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0 0 32px 0;
+}
+
+.doctor-profile-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.doctor-profile-input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #000000;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.doctor-profile-input:focus {
+    border-color: #ffffff;
+}
+
+.doctor-profile-file {
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    color: #666666;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.doctor-profile-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #2a2a2a;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.doctor-profile-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.doctor-profile-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.doctor-profile-error {
+    font-size: 13px;
+    color: #ff4444;
+    margin: 0 0 16px 0;
+}
+
+.doctor-profile-success {
+    font-size: 13px;
+    color: #44ff44;
+    margin: 0 0 16px 0;
+}

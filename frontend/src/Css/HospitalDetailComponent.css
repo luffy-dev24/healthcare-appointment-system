@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.hospital-detail-page {
+    min-height: calc(100vh - 64px);
+    background-color: #0a0a0a;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* top image banner */
+.hospital-detail-banner {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.hospital-detail-banner-placeholder {
+    width: 100%;
+    height: 280px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+/* main content */
+.hospital-detail-content {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* back button */
+.hospital-detail-back-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #1f1f1f;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+
+.hospital-detail-back-btn:hover {
+    border-color: #444444;
+    color: #ffffff;
+}
+
+/* hospital name + city */
+.hospital-detail-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    line-height: 0.9;
+    margin: 0 0 8px 0;
+}
+
+.hospital-detail-city {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #444444;
+    margin: 0 0 32px 0;
+}
+
+/* info grid */
+.hospital-detail-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.hospital-detail-info-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 16px;
+}
+
+.hospital-detail-info-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 6px;
+}
+
+.hospital-detail-info-value {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* image gallery */
+.hospital-detail-gallery-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+}
+
+.hospital-detail-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.hospital-detail-gallery-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 2px;
+    border: 1px solid #1a1a1a;
+    display: block;
+}
+
+/* divider */
+.hospital-detail-divider {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    margin: 32px 0;
+}
+
+/* doctor section */
+.hospital-detail-doctor-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.hospital-detail-doctor-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hospital-detail-doctor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2a2a2a;
+    flex-shrink: 0;
+}
+
+.hospital-detail-doctor-avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    border: 2px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.hospital-detail-doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hospital-detail-doctor-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.hospital-detail-doctor-spec {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+    margin: 0;
+}
+
+.hospital-detail-doctor-details {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.hospital-detail-doctor-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hospital-detail-doctor-detail-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.hospital-detail-doctor-detail-value {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* error */
+.hospital-detail-error {
+    font-size: 13px;
+    color: #ff4444;
+    padding: 40px;
+    text-align: center;
+}

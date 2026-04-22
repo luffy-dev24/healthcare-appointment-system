@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600&display=swap');
+
+.login-page {
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.login-card {
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-top: 3px solid #ffffff;
+    border-radius: 6px;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.login-error {
+    font-size: 12px;
+    color: #ff4444;
+    background-color: #1a0000;
+    border: 1px solid #330000;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.login-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #000000;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    outline: none;
+}
+
+.login-input:focus {
+    border-color: #ffffff;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.login-btn:disabled {
+    background-color: #333333;
+    color: #666666;
+    cursor: not-allowed;
+    border: none;
+}
+
+.login-footer {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #555555;
+    text-align: center;
+}
+
+.login-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

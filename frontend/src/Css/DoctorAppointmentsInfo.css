@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
+
+.appointments-page {
+    min-height: calc(100vh - 64px);
+    background-color: #0a0a0a;
+    padding: 40px;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.appointments-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.appointments-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.appointments-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #444444;
+    border: 1px solid #222222;
+    padding: 6px 14px;
+    border-radius: 2px;
+}
+
+/* doctor card wraps all slots */
+.doctor-appointments-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* doctor header */
+.doctor-appointments-header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.doctor-appointments-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #2a2a2a;
+    flex-shrink: 0;
+}
+
+.doctor-appointments-avatar-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.doctor-appointments-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+}
+
+.doctor-appointments-spec {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #444444;
+    margin: 0;
+}
+
+/* hospital info row */
+.doctor-appointments-hospital {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.hospital-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.hospital-info-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.hospital-info-value {
+    font-size: 12px;
+    color: #555555;
+}
+
+/* slots grid */
+.appointment-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+}
+
+/* individual slot card */
+.appointment-slot-card {
+    background-color: #111111;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    padding: 16px;
+}
+
+.appointment-slot-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.appointment-slot-date {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.appointment-slot-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.slot-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.slot-info-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.slot-info-value {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* status badges */
+.slot-status-open {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #44ff44;
+    background: #001a00;
+    border: 1px solid #003300;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+
+.slot-status-full {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffaa44;
+    background: #1a0a00;
+    border: 1px solid #331500;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+
+.slot-status-closed {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ff4444;
+    background: #1a0000;
+    border: 1px solid #330000;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+
+/* book button */
+.slot-book-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.slot-book-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* not available slot */
+.slot-unavailable {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #333333;
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* empty state */
+.appointments-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    border: 1px dashed #1f1f1f;
+    border-radius: 2px;
+}
+
+.appointments-empty-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.appointments-empty-text {
+    font-size: 13px;
+    color: #333333;
+    font-weight: 300;
+}
